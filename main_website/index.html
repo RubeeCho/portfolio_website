@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruby Cho Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Load particles.js for star background effect -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+    <!-- icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <button class="mobile-menu-btn" id="mobileMenuBtn" style="display: none;">☰</button>
+
+    <!-- Particles.js star background -->
+    <div id="particles-js"></div>
+
+    <!-- Shooting stars animation-->
+    <div class="shooting-stars">
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+    </div>
+
+    <!--web page info content starts HERE-->
+    <div class="container">
+
+        <!-- Sidebar navigation-->
+        <nav class="sidebar" id="sidebar">
+            <div class="logo">Ruby Cho</div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="mailto:rubycho@umd.edu" class="social-link" title="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://github.com/RubeeCho" class="social-link" target="_blank" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/RubyCho" class="social-link" target="_blank" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="/resume.pdf" class="social-link" target="_blank">resume</a>
+            </div>
+        </nav>
+
+        <!-- Main content area-->
+        <main class="main-content">
+
+            <!-- Hero section -->
+            <section id="hero" class="section hero">
+                <h1>Ruby Cho</h1>
+                <p class="subtitle">CS Student & Bio Inspired Robotics Researcher at University of Maryland</p>
+                <p class="description">
+                    Computer Science student at University of Maryland with a passion for creating meaningful technology and creative ventures. Currently expanding my skills through bio-robotics research while developing web applications and content creation projects.
+                </p>
+            </section>
+
+            <!-- Projects section-->
+            <section id="projects" class="section">
+
+                <!-- Projects header-->
+                <div class="projects-header">
+                    <h2 class="section-title">Projects</h2>
+                    <a href="#" class="all-projects-link">All Projects</a>
+                </div>
+
+                <!--individual project cards-->
+                <div class="projects-grid">
+
+                    <div class="project">
+                        <div class="project-badge">Latest</div>
+                        <div class="project-year">2025</div>
+                        <h3>Bio Inspired Robotics Research</h3>
+                        <p class="project-description">
+                            Engineering bio-inspired amphibian robot with stingray undulating fin locomotion system
+                        </p>
+                        <div class="project-buttons">
+                            <a href="#" class="project-btn">Article</a>
+                            <a href="#" class="project-btn">Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-year">2025</div>
+                        <h3>PC Upgrade</h3>
+                        <p class="project-description">
+                            Transformed old computer into RGB powerhouse for $140
+                        </p>
+                        <div class="project-buttons">
+                            <a href="https://portfolio-webpage-one.pages.dev/" class="project-btn">Article</a>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-year">2024</div>
+                        <h3>Infomative Exercise Webpage</h3>
+                        <p class="project-description">
+                            Comprehensive web guide for personal workout routine
+                        </p>
+                        <div class="project-buttons">
+                            <a href="#" class="project-btn">Article</a>
+                            <a href="https://project3-exercisedoc.pages.dev/" class="project-btn">Demo</a>
+                        </div>
+                    </div>
+
+                    <!--Additional projects can be added here-->
+
+                </div><!--End of projects cards-->
+            </section><!--end of projects section-->
+
+            <!--about me section-->
+            <section id="about" class="section">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <p>
+                        I'm a Computer Science student at the University of Maryland driven by curiosity and the belief that technology should solve real problems. Currently, I'm involved in bio-inspired robotics research, where I explore how nature's designs can inform innovative engineering solutions. Beyond academics, I'm passionate about fitness and maintaining an active lifestyle. I thrive on turning ideas into reality, whether that's through code, research, or creative projects. My goal is to develop technology that makes a meaningful impact while building sustainable ventures that align with my values.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Contact section-->
+            <section id="contact" class="section">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-item" id="contact-email">
+                        <h3>Email</h3>
+                        <p>rubycho@umd.edu</p>
+                    </div>
+                    <div class="contact-item" id="contact-github">
+                        <h3>GitHub</h3>
+                        <p>RubeeCho</p>
+                    </div>
+                    <div class="contact-item" id="contact-linkedin">
+                        <h3>LinkedIn</h3>
+                        <p>RubyCho</p>
+                    </div>
+                    <div class="contact-item" id="contact-resume">
+                        <h3>Resume</h3>
+                        <p>Download PDF</p>
+                    </div>
+                </div>
+            </section>
+        </main> <!--main content ends here (hero + projects + about + contact)-->
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
