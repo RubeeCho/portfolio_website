@@ -114,10 +114,10 @@ document.getElementById('contact-github').addEventListener('click', function () 
 });
 
 document.getElementById('contact-linkedin').addEventListener('click', function () {
-    window.open('https://linkedin.com/RubyCho', '_blank');
+    window.open('https://www.linkedin.com/in/ruby-cho-038301349/', '_blank');
 });
 
 document.getElementById('contact-resume').addEventListener('click', function () {
-    window.open('/resume.pdf', '_blank');
+    window.open('Resume_2025.pdf', '_blank');
 });
 
