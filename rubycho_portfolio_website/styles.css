@@ -24,11 +24,9 @@ body {
 .container {
     /*container is the main wrapper for the entire web page content*/
     display: flex;
-    /*Turns the element into a flex container (container), Its direct children become flex items (sidebar + main-content, etc)*/
     min-height: 100vh;
     position: relative;
     z-index: 1;
-    /*above the background grid layer*/
 }
 
 /* inside webpage container - Side Navigation */
@@ -128,7 +126,7 @@ body {
     gap: 1.5rem;
     margin-top: auto;
     padding-top: 2rem;
-    margin-left: -0.8rem;
+    margin-left: -0.5rem;
     border-top: 1px solid rgba(139, 92, 246, 0.2);
 }
 
@@ -149,8 +147,8 @@ body {
 
 /* Main Content */
 body.sidebar-open .main-content {
-    margin-left: 30%;
-    margin-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 900px;
     transition: margin-left 0.3s ease;
 }
@@ -255,6 +253,7 @@ body:not(.sidebar-open) .main-content {
     margin-bottom: 3rem;
 }
 
+/*
 .all-projects-link {
     color: #8b5cf6;
     text-decoration: none;
@@ -270,6 +269,7 @@ body:not(.sidebar-open) .main-content {
     text-shadow: 0 0 10px rgba(139, 92, 246, 0.8);
     border-color: #8b5cf6;
 }
+    */
 
 .projects-grid {
     display: grid;
@@ -288,6 +288,7 @@ body:not(.sidebar-open) .main-content {
     position: relative;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(139, 92, 246, 0.1);
+    /* Ensures the project card is responsive */
 }
 
 .project::before {
@@ -379,13 +380,6 @@ body:not(.sidebar-open) .main-content {
     transform: translateY(-2px);
 }
 
-/*optional: latest project highlight*/
-.project.latest {
-    grid-column: 1 / -1;
-    background: rgba(139, 92, 246, 0.1);
-    border: 2px solid #8b5cf6;
-    box-shadow: 0 8px 40px rgba(139, 92, 246, 0.2);
-}
 
 .project-badge {
     display: inline-block;
@@ -522,9 +516,6 @@ body:not(.sidebar-open) .main-content {
         grid-template-columns: 1fr;
     }
 
-    .project.latest {
-        grid-column: 1;
-    }
 }
 
 @media (max-width: 600px) {
@@ -533,6 +524,10 @@ body:not(.sidebar-open) .main-content {
         min-width: 0;
         max-width: 100vw;
         padding: 1rem;
+    }
+
+    .social-links {
+        margin-left: 5%;
     }
 }
 
@@ -640,8 +635,8 @@ html {
     animation-delay: 150ms;
 }
 
-.shooting-star:nth-child(2)::before,
-.shooting-star:nth-child(2)::after {
+.shooting-stars .shooting-star:nth-child(2)::before,
+.shooting-stars .shooting-star:nth-child(2)::after {
     animation-delay: 150ms;
 }
 
@@ -655,9 +650,6 @@ html {
 .shooting-star:nth-child(3)::after {
     animation-delay: 1600ms;
 }
-
-
-
 
 
 /* Animations */
